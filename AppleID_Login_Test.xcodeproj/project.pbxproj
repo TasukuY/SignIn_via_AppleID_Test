@@ -8,17 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C96A338F288E39280012279B /* AppleID_Login_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A338E288E39280012279B /* AppleID_Login_TestApp.swift */; };
-		C96A3391288E39280012279B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A3390288E39280012279B /* ContentView.swift */; };
+		C96A3391288E39280012279B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A3390288E39280012279B /* MainView.swift */; };
 		C96A3393288E392B0012279B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96A3392288E392B0012279B /* Assets.xcassets */; };
 		C96A3396288E392B0012279B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C96A3395288E392B0012279B /* Preview Assets.xcassets */; };
+		C96A33A0288E4EB90012279B /* AppleIDSignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A339F288E4EB90012279B /* AppleIDSignIn.swift */; };
+		C96A33C0288F2DDB0012279B /* OnboardingFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A33BF288F2DDB0012279B /* OnboardingFlowView.swift */; };
+		C96A33C6288F4B260012279B /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96A33C5288F4B260012279B /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C96A338B288E39280012279B /* AppleID_Login_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleID_Login_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C96A338E288E39280012279B /* AppleID_Login_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleID_Login_TestApp.swift; sourceTree = "<group>"; };
-		C96A3390288E39280012279B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C96A3390288E39280012279B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C96A3392288E392B0012279B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C96A3395288E392B0012279B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C96A339C288E45F70012279B /* AppleID_Login_Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AppleID_Login_Test.entitlements; sourceTree = "<group>"; };
+		C96A339F288E4EB90012279B /* AppleIDSignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIDSignIn.swift; sourceTree = "<group>"; };
+		C96A33BF288F2DDB0012279B /* OnboardingFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingFlowView.swift; sourceTree = "<group>"; };
+		C96A33C5288F4B260012279B /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +58,12 @@
 		C96A338D288E39280012279B /* AppleID_Login_Test */ = {
 			isa = PBXGroup;
 			children = (
+				C96A339C288E45F70012279B /* AppleID_Login_Test.entitlements */,
 				C96A338E288E39280012279B /* AppleID_Login_TestApp.swift */,
-				C96A3390288E39280012279B /* ContentView.swift */,
+				C96A3390288E39280012279B /* MainView.swift */,
+				C96A33BF288F2DDB0012279B /* OnboardingFlowView.swift */,
+				C96A339F288E4EB90012279B /* AppleIDSignIn.swift */,
+				C96A33C5288F4B260012279B /* ViewModel.swift */,
 				C96A3392288E392B0012279B /* Assets.xcassets */,
 				C96A3394288E392B0012279B /* Preview Content */,
 			);
@@ -137,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C96A3391288E39280012279B /* ContentView.swift in Sources */,
+				C96A33C6288F4B260012279B /* ViewModel.swift in Sources */,
+				C96A3391288E39280012279B /* MainView.swift in Sources */,
 				C96A338F288E39280012279B /* AppleID_Login_TestApp.swift in Sources */,
+				C96A33A0288E4EB90012279B /* AppleIDSignIn.swift in Sources */,
+				C96A33C0288F2DDB0012279B /* OnboardingFlowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +278,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppleID_Login_Test/AppleID_Login_Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleID_Login_Test/Preview Content\"";
@@ -293,6 +308,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AppleID_Login_Test/AppleID_Login_Test.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleID_Login_Test/Preview Content\"";
